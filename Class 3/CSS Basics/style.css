@@ -1,4 +1,15 @@
-#para3{
-    background-color: purple;
+ #para1ID{
+    color: red;
+    background-color: lime;
+ }
+
+ .para{
+    color: purple;
+    background-color: aqua;
+ }
+
+ p{
     color: white;
-}
+    background-color: blue;
+ }
+ 
