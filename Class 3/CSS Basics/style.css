@@ -1,4 +1,4 @@
- #para1ID{
+ /* #para1ID{
     color: red;
     background-color: lime;
  }
@@ -12,4 +12,13 @@
     color: white;
     background-color: blue;
  }
- 
+  */
+
+
+  p{
+   color: red;
+  }
+
+  *{
+   color: red;
+  }

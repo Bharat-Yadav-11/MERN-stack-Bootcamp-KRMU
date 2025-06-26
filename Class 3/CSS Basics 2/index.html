@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* *{
-            margin: 0;
-        } */
+        *{
+                box-sizing: border-box;
+                margin: 0px;
+        }
         #div1{
             /* height: 300px; */
             /* border: 2px solid black; */
@@ -57,15 +58,24 @@
 
 
         #para1{
-            border: 2px solid black;
+            /* border: 2px solid black; */
             /* display: inline; */
 
-            display: inline-block;
+            /* display: inline-block;
             width: 700px;
-            background-color: rgb(255, 0, 0);
+            background-color: rgb(255, 0, 0); */
             /* opacity: 1; */
             
-            
+
+
+
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+            /* padding: 100px; */
+            /* 200+100+100+4 */
         }
     </style>
 </head>
@@ -82,7 +92,7 @@
 
   <!-- <p id="para">this is para 1</p> -->
 
-  <p id="para1">this is para 1</p>
+  <p id="para1">box 1</p>
   
 
 </body>

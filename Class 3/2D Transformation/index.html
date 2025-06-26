@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        #parent{
+            border: 2px solid black;
+
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+        }
+
+#box1{
+    background-color: red;
+     /* margin-left: 100px; */
+     /* position: relative; */
+/* transform: translateX(300px);
+     transform: translateY(150px); */
+     transform: translate(500px, 200px);
+     left: 200px;
+}
+#box2{
+    background-color: lime;
+    transform: rotateZ(-60deg)
+}
+#box3{
+    background-color: aqua;
+    /* transform:scale(0.5); */
+    transform: skewX(-30deg);
+}
+
+/* #box3:hover{
+     transform:scale(0.9);
+} */
+#box4{
+    background-color: purple;
+}
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
