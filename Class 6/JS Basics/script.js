@@ -49,15 +49,16 @@
 // // console.log(x>y)
 // console.log(x<y)
 
+ 
 
-
-// {
 //     let x  = 10
 //     console.log(x)
-// }
+
 
 // let x  = 20
 // console.log(x)
+
+
 
 
 
@@ -107,8 +108,51 @@
 
 
 
-let firstname = 'pratik'
+// let firstname = 'pratik'
 
-// console.log(firstname + ' Raj Verma')
+// // console.log(firstname + ' Raj Verma')
 
-console.log(`${firstname} Raj Verma`)
+// console.log(`${firstname} Raj Verma`)  
+
+
+// x = 30;
+// console.log(x)
+
+// function div(){
+//     // let x = 10;
+//     // var x = 10;
+//     // const x = 30
+//     x = 20
+// }
+
+// div()
+
+// console.log(x)
+
+// {
+//     let x = 10
+//     // var x = 30
+// }
+
+// console.log(x)
+
+
+
+// let x  = 100;
+// let y = '10'
+
+// console.log(x != y)
+
+
+
+// div()
+
+// function div(){
+//     console.log('hello world')
+// }
+
+// for(let i =1;i<=5;i++){
+//     div()
+// }
+
+
