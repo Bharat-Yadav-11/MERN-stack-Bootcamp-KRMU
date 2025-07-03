@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #buttonBox{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        #counter{
+            border: 2px solid black; 
+            width: 400px; 
+            height: 100px; 
+            
+        }
+
+        #screen{
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button{
+            width: 100px;
+        }
+    </style>
+</head> 
+<body>
+    <div id="counter">
+        <p id="screen">0</p>
+        <div id="buttonBox">
+            <button id="increment">+</button>
+            <button id="reset">Reset</button>
+            <button id="decrement">-</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

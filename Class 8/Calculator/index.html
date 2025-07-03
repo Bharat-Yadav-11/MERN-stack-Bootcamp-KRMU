@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calculator{
+            border: 2px solid black;
+            width: 500px;
+            padding: 10px;
+        }
+
+        #calButton{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+        }
+
+        #screen{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <p id="screen">0</p>
+
+        <div id="calButton">
+            <button class="box" >1</button>
+            <button class="box" >2</button>
+            <button class="box" >3</button>
+            <button class="box" >4</button>
+            <button class="box" >5</button>
+            <button class="box" >6</button>
+            <button class="box" >7</button>
+            <button class="box" >8</button>
+            <button class="box" >9</button>
+            <button class="box" >0</button>
+            <button class="box" >+</button>
+            <button class="box" >-</button>
+            <button class="box" >/</button>
+            <button class="box" >*</button>
+            <button class="box" >=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

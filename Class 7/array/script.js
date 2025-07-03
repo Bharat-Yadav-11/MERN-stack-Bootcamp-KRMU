@@ -84,21 +84,35 @@
 // })
 
 
-
-let arr = [3,5,4,1,2,100]
-console.log(arr)
-
 // filter method....
 
 // let newArr = arr.filter((element)=>{
-//     return element<4
-// })
+    //     return element<4
+    // })
+    
+    // console.log(newArr)
+    
+    // reduce.................
+    let arr = [3,5,4,1,2,100]
+    console.log(arr)
+    
+    // let total = arr.reduce((acc,crr)=>{
+    //     return acc + crr
+    // },0)
+    
+    // console.log(total)
 
-// console.log(newArr)
+//find.................
+    let data = arr.find((e)=>{
+        return e===1
+    })
 
-// arr.reverse()
+    console.log(data)
 
-// arr.sort((a,b)=>a-b)
+    
+    // arr.reverse()
+    
+    // arr.sort((a,b)=>a-b)
 // // console.log(arr)
 // // arr.sort()
 // console.log(arr)
