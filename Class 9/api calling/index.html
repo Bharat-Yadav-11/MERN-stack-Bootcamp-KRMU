@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .card{
+            border: 2px solid black;
+            /* width: 200px; */
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(230, 255, 230);
+        
+        }
+
+        #Names{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
     <div id="Names">
