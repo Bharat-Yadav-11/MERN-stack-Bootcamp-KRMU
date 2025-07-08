@@ -1,0 +1,11 @@
+h1{
+    color: red;
+    background-color: rgb(86, 213, 255);
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 50%;
+    align-content: center;
+    
+    height: 100px;
+    width: 100px;
+}
