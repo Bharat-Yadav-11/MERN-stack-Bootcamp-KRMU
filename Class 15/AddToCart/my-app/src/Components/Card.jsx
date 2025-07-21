@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 
 const Card = ({name, index}) => {
+
     const{ addToCart } = useContext(CartContext)
   return (
   <div>
