@@ -116,7 +116,5 @@ const deleteLogic = async(req,res)=>{
         })
     }
 }
-
  
-
 module.exports = {createLogic, readLogic, updateLogic , deleteLogic}
