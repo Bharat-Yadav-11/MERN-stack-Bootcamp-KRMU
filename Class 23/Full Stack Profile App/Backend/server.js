@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+
 const cors = require('cors')
 
 app.use(cors({
@@ -11,7 +12,7 @@ app.use(express.json())
 const route = require('./routes/userRoutes')
 app.use(route)
 
-const connectDB = require('./database/mongodb')
+const connectDB = require('./database/mongodb,js')
 connectDB() 
 
 const port  = 4000  

@@ -77,9 +77,6 @@ const updateLogic = async(req,res)=>{
             success:true,
             user
         })
-
-
-
     } catch (error) {
         console.log(error)
         res.status(500).json({

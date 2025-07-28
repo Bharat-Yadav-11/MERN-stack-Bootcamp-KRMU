@@ -1,6 +1,7 @@
 const express = require('express')
-const { readLogic, createLogic, updateLogic, deleteLogic } = require('../controllers/userLogics')
 const route = express.Router()
+
+const { readLogic, createLogic, updateLogic, deleteLogic } = require('../controllers/userLogics')
 
 
 route.get('/readData', readLogic)
