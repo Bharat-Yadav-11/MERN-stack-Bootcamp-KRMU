@@ -15,11 +15,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         require:true
     },
-    // role:{
-    //     type:String,
-    //     require:true,
-    //     enum:['Author', 'Reader']
-    // }
+    role:{
+        type:String,
+        require:true,
+         enum:['Author', 'Reader']
+    }
 })
 
 

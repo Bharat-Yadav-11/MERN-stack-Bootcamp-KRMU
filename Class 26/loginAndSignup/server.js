@@ -1,8 +1,16 @@
 const express = require('express')
 const app = express()
+const cookieParser = require('cookie-parser')
 
 
-const port = 4000
+app.use(express.json())
+
+app.use(cookieParser())
+
+const port = 4000 
+
+const router = require('./routes/userRoute')
+app.use(router)
 
 const connectDB = require('./database/mongodb')
 connectDB()

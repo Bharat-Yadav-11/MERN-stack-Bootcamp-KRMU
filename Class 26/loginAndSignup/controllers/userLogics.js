@@ -1,23 +1,25 @@
-const User = requirel("../models/user");
+const User = require("../models/user");
 const bcrypt = require("bcrypt");
-
 const jwt = require('jsonwebtoken')
+
 
 const signup = async (req, res) => {
   try {
-    const { email, password, name } = req.body;
+    const { email, password, name , role } = req.body;
 
-    if (!email || !password || !name) {
+
+
+    if (!email || !password || !name ) {
       return res.status(400).json({
         success: false,
         message: "data is missing for signup...",
       });
     }
 
-    let user = await User.findOne({ email });
+    let user = await User.findOne({email});
 
     if (user) {
-      return res.status.json({
+      return res.status(400).json({
         success: false,
         message: "account has already created by this email...",
       });
@@ -25,29 +27,24 @@ const signup = async (req, res) => {
 
     let hashPassword = await bcrypt.hash(password, 10);
 
-    user = await User.create({ name, email, password: hashPassword });
+    user = await User.create({ name, email, password: hashPassword, role });
 
-    if (!user) {
-      return res.status(400).json({
-        success: false,
-        message: "failed to create account...",
-      });
-    }
-
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       message: "account created successfully....",
       user
     });
 
-  } catch (error) {
+  }catch(error) {
+    console.error(error)
     res.status(500).json({
       success: false,
-      message: "failed to create account...",
+      message: "failed to create account...",error
     });
   }
 };
 
+ 
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -68,7 +65,8 @@ const login = async (req, res) => {
       });
     }
 
-    const checkPassword = bcrypt.compare(password, user.password);
+    const checkPassword = await bcrypt.compare(password, user.password);
+   
 
     if (!checkPassword) {
       return res.status(401).json({
@@ -81,8 +79,8 @@ const login = async (req, res) => {
     let payload = {
         email:user.email,
         id:user._id,
+        role:user.role
     }
-
 
     const jwt_secret_key = 'jsonToken'
 
